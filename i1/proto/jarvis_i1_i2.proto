@@ -1,0 +1,25 @@
+﻿syntax = "proto3";
+package jarvis;
+
+message Step {
+  string step_id = 1;
+  string type = 2;
+  string payload = 3;
+}
+
+message TaskRequest {
+  string task_id = 1;
+  string intent = 2;
+  repeated Step plan = 3;
+  string user_prompt = 4;
+}
+
+message TaskResult {
+  string task_id = 1;
+  string status = 2;
+  string logs = 3;
+}
+
+service I2 {
+  rpc ExecuteTask(TaskRequest) returns (TaskResult);
+}

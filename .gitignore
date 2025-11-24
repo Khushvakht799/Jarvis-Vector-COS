@@ -1,0 +1,42 @@
+﻿# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.env
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Electron
+dist/
+build/
+
+# Large files
+*.dll
+*.pth
+*.bin
+*.dat
+*.exe
+*.msi
+*.whl
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Training data
+*.pt
+*.pkl
+*.h5

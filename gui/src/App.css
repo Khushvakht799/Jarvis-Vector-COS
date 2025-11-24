@@ -1,0 +1,64 @@
+/* App.css */
+.App {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.fields, .commands, .settings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.fields button, .commands button, .settings button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: #007acc;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.fields button:hover, .commands button:hover, .settings button:hover {
+  background-color: #005fa3;
+}
+
+.commands select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.settings-panel {
+  margin-top: 10px;
+  padding: 15px;
+  border: 1px solid #007acc;
+  border-radius: 8px;
+  background-color: #e6f2ff;
+}
+
+.output {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  min-height: 60px;
+}
+
+.output h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
